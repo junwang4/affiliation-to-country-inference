@@ -197,6 +197,8 @@ def run(task, input):
         a2c.train_model(input)
     elif task == 'infer':
         a2c.predict_country(input)
+    else:
+        print('\n- error: unknown task:', task)
 
 
 if __name__ == '__main__':
